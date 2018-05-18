@@ -1,0 +1,133 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Dec 04 20:29:57 2017
+| Host         : DESKTOP-14BF2VP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    63 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           20 |
+| No           | No                    | Yes                    |               7 |            6 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             173 |           65 |
+| Yes          | No                    | Yes                    |             649 |          369 |
+| Yes          | Yes                   | No                     |              73 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | design_1_i/uart_0/U0/t_x/tx0              | design_1_i/debounce_0/U0/dbnc                 |                1 |              1 |
+|  clk_IBUF_BUFG | design_1_i/uart_0/U0/t_x/index0           | design_1_i/debounce_0/U0/dbnc                 |                1 |              4 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/curr0            | design_1_i/debounce_0/U0/dbnc                 |                4 |              5 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/rID10            | design_1_i/debounce_0/U0/dbnc                 |                3 |              5 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/destID0          | design_1_i/controls_0/U0/destID[4]_i_1_n_0    |                1 |              5 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/rID2[4]_i_1_n_0  | design_1_i/debounce_0/U0/dbnc                 |                2 |              5 |
+|  clk_IBUF_BUFG |                                           | design_1_i/debounce_0/U0/dbnc                 |                6 |              7 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/charSend0        |                                               |                1 |              8 |
+|  clk_IBUF_BUFG | design_1_i/uart_0/U0/r_x/char0            |                                               |                3 |              8 |
+|  clk_IBUF_BUFG | design_1_i/uart_0/U0/t_x/reg0             | design_1_i/debounce_0/U0/dbnc                 |                2 |              8 |
+|  clk_IBUF_BUFG | design_1_i/vga_ctrl_0/U0/htemp[9]_i_1_n_0 | design_1_i/vga_ctrl_0/U0/vtemp[9]_i_1_n_0     |                4 |              9 |
+|  clk_IBUF_BUFG | design_1_i/clock_pixel_0/U0/div           | design_1_i/vga_ctrl_0/U0/htemp[9]_i_1_n_0     |                5 |              9 |
+|  clk_IBUF_BUFG | design_1_i/uart_0/U0/r_x/d0               | design_1_i/debounce_0/U0/dbnc                 |                3 |             11 |
+|  clk_IBUF_BUFG | design_1_i/pixel_pusher_0/U0/temp0        | design_1_i/pixel_pusher_0/U0/temp[11]_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/fbAddr10         |                                               |                3 |             12 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/irAddr0          |                                               |                4 |             14 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/dAddr0           |                                               |                4 |             15 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/dOut0            |                                               |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/fbDout10         |                                               |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/pc0              | design_1_i/debounce_0/U0/dbnc                 |                7 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/reg10            | design_1_i/debounce_0/U0/dbnc                 |                8 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/reg20            | design_1_i/debounce_0/U0/dbnc                 |                5 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/reg30            | design_1_i/debounce_0/U0/dbnc                 |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/regwD10          |                                               |                7 |             16 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/regwD20          |                                               |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[15]0             | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[10]0             | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[11]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[12]0             | design_1_i/debounce_0/U0/dbnc                 |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[13]0             | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[14]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[30]0             | design_1_i/debounce_0/U0/dbnc                 |               12 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[16]0             | design_1_i/debounce_0/U0/dbnc                 |               12 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[17]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[18]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[19]0             | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[1]0              | design_1_i/debounce_0/U0/dbnc                 |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[20]0             | design_1_i/debounce_0/U0/dbnc                 |               12 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[22]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[23]0             | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[24]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[25]0             | design_1_i/debounce_0/U0/dbnc                 |                8 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[26]0             | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[27]0             | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[28]0             | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[29]0             | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[2]0              | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[31]0             | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[3]0              | design_1_i/debounce_0/U0/dbnc                 |                8 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[4]0              | design_1_i/debounce_0/U0/dbnc                 |                7 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[5]0              | design_1_i/debounce_0/U0/dbnc                 |                8 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[6]0              | design_1_i/debounce_0/U0/dbnc                 |                6 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[7]0              | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[9]0              | design_1_i/debounce_0/U0/dbnc                 |               11 |             16 |
+|  clk_IBUF_BUFG | design_1_i/clock_div_0/U0/div             |                                               |               12 |             16 |
+|  clk_IBUF_BUFG | design_1_i/clock_pixel_0/U0/div           | design_1_i/pixel_pusher_0/U0/R[4]_i_1_n_0     |                5 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[21]0             | design_1_i/debounce_0/U0/dbnc                 |                9 |             16 |
+|  clk_IBUF_BUFG | design_1_i/regs_0/U0/reg[8]0              | design_1_i/debounce_0/U0/dbnc                 |               10 |             16 |
+|  clk_IBUF_BUFG | design_1_i/clock_div_0/U0/div             | design_1_i/debounce_0/U0/dbnc                 |               16 |             19 |
+|  clk_IBUF_BUFG | design_1_i/debounce_0/U0/count            | design_1_i/debounce_0/U0/clear                |                6 |             22 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/instruction0     | design_1_i/debounce_0/U0/dbnc                 |               17 |             31 |
+|  clk_IBUF_BUFG | design_1_i/controls_0/U0/aluA0            |                                               |               13 |             36 |
+|  clk_IBUF_BUFG |                                           |                                               |               20 |             37 |
++----------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     1 |
+| 5      |                     4 |
+| 7      |                     1 |
+| 8      |                     3 |
+| 9      |                     2 |
+| 11     |                     1 |
+| 12     |                     2 |
+| 14     |                     1 |
+| 15     |                     1 |
+| 16+    |                    46 |
++--------+-----------------------+
+
+
